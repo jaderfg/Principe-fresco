@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+          <div class="header__content">
+            <a href="#">
+            <img class="header__logo"src="./img/logo-principe-fresco.png"alt="Logo de principe fresco"title="Logo de principe fresco"loading="lazy"width="247"height="57"/></a>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li><a class="navigation__link" href="#">home</a></li>
+                <li><a class="navigation__link" href="#shop">shop</a></li>
+                <li>
+                  <a class="navigation__link" href="#collections">collections</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__icons">
+              <button aria-label="Perfil" title="Perfil"class="btn-icon user"></button>
+              <button aria-label="Carrito" title="Carrito" class="btn-icon car"></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div id="shop" class="layout-product">
+          <section class="slider-layout" aria-label="Coleccion de ropa principal">
+            <div class="thumbnail">
+              <div class="thumbnail-image isActiveThumbnail">
+                <a href="#slide-1"> 
+                <img src="./img/thumbnail-01.png" alt="Foto thumbnail 01" title="Foto thumbnail 01" loading="lazy" width="80" height="120"/></a>
+              </div>
+              <div class="thumbnail-image">
+                <a href="#slide-2">
+                <img src="./img/thumbnail-02.png" alt="Foto thumbnail 02" title="Foto thumbnail 02"loading="lazy" width="80"height="120"/></a>
+              </div>
+              <div class="thumbnail-image">
+                <a href="#slide-3">
+                <img src="./img/thumbnail-03.png" alt="Foto thumbnail 03" title="Foto thumbnail 03" loading="lazy"width="80"height="120"/></a>
+              </div>
+              <div class="thumbnail-image">
+                <a href="#slide-4">
+                <img src="./img/thumbnail-04.png" alt="Foto thumbnail 04" title="Foto thumbnail 04" loading="lazy"width="80"height="120"/></a>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slider__content">
+                <div id="slide-1" class="slider__item">
+                <img src="./img/image-principal-01.png"alt=""loading="lazy"width="616"height="700"/>
+                </div>
+                <div id="slide-2" class="slider__item">
+                <img src="./img/image-principal-02.png"alt=""loading="lazy"width="616"height="700"/>
+                </div>
+                <div id="slide-3" class="slider__item">
+                <img src="./img/image-principal-03.png"alt=""loading="lazy"width="616"height="700"/>
+                </div>
+                <div id="slide-4" class="slider__item">
+                <img src="./img/image-principal-04.png"alt=""loading="lazy"width="616"height="700"/>
+                </div>
+              </div>
+              <div class="slider__dots">
+                <a class="dot isActive" href="#slide-1"></a>
+                <a class="dot" href="#slide-2"></a>
+                <a class="dot" href="#slide-3"></a>
+                <a class="dot" href="#slide-4"></a>
+              </div>
+            </div>
+          </section>
+          <section
+            class="description-layout"
+            aria-label="Descripcion de ropa principal">
+            <div class="description">
+              <div class="product">
+                <h2 class="product__name">Crown Sweatshirt</h2>
+                <p class="product__price">$80.00</p>
+              </div>
+              <div class="sizes">
+                <p class="sizes__title">Size</p>
+                <div class="sizes__types">
+                  <p class="sizes__item is-selected">S</p>
+                  <p class="sizes__item">M</p>
+                  <p class="sizes__item">L</p>
+                  <p class="sizes__item">XL</p>
+                  <p class="sizes__item">XXL</p>
+                </div>
+              </div>
+              <div class="shopButtons">
+                <a class="btn-shop btn--primary" href="#">add to cart</a>
+                <a id="btn-shop" href="#" class="btn-shop btn--secondary">buy it now</a>
+              </div>
+              <p class="info-producto">
+                Let them know you’re 90s royalty with this official The Fresh
+                Prince crown pattern sweater. Throw vintage vibes that Uncle Phil
+                would approve of. Featuring woven The Fresh Prince logo on chest.
+                Navy crown print crew neck sweatshirt with white ribbed collar and
+                waist band. Cotton/Poly blend.
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- modal -->
+        <section id="modal" class="modal">
+          <div class="modal__content">
+            <div class="wrapper">
+              <div id="closeModal" class="modal__close"></div>
+              <div class="modal__card">
+                <div class="modal__card__left">
+                  <div class="modal__card__left__picture">
+                    <img src="./img/avatar.png"alt=""width="64"height="64"loading="lazy"/>
+                  </div>
+                  <div class="modal__card__left__text">
+                    <h4 class="modal__card__left__text__title">Crown Sweatshirt</h4>
+                    <p class="modal__card__left__text__price">$85.00</p>
+                  </div>
+                </div>
+                <div class="modal__card__right">
+                  <p class="modal__card__right__quantity">1</p>
+                  <p class="modal__card__right__remove">Remove</p>
+                </div>
+              </div>
+              <div class="modal__info">
+                <div class="modal__info__price">
+                  <p class="modal__info__price__title">Subtotal</p>
+                  <p class="modal__info__price__total">$85.00</p>
+                </div>
+                <p class="modal__info__text">Shipping, taxes, and discount codes calculated at checkout.</p>
+              </div>
+              <a class="btn-shop btn--secondary" href="#">CHECK OUT</a>
+              <p class="modal__text">Please Note: All items are pre-order and will ship in 6-10 weeks.Guaranteed holiday delivery.</p>
+            </div>
+          </div>
+        </section>
+        <!-- modal -->
+        <section id="collections" class="set" aria-label="Coleccion de ropas">
+          <div class="wrapper">
+            <h2 class="set__title">YOU MAY ALSO LIKE</h2>
+            <div id="set-content" class="set__content">
+              <!-- hand animation -->
+              <div id="hand" class="hand-animation">
+                <img src="./img/hands.svg" alt="" loading="lazy" />
+              </div>
+              <!-- hand animation -->
+              <div class="set__item">
+                <img data-outfit="setOne"class="set__item__image"src="./img/set-fresco-man-01.png"alt="Fresh Stripe Sweater"title="Fresh Stripe Sweater"loading="lazy"width="340"height="511"/>
+    
+                <p class="set__item__title">Fresh Stripe Sweater</p>
+                <p class="set__item__price">$85.00</p>
+              </div>
+              <div class="set__item">
+                <img data-outfit="setTwo"class="set__item__image"src="./img/set-fresco-brown-woman-01.png"alt="Fresh Black Tie-Dye Hoodie"title="Fresh Black Tie-Dye Hoodie"loading="lazy"width="340"height="511"/>
+                <p class="set__item__title">Fresh Black Tie-Dye Hoodie</p>
+                <p class="set__item__price">$75.00</p>
+              </div>
+              <div class="set__item">
+                <img data-outfit="setThree"class="set__item__image"src="./img/set-fresco-white-woman-01.png"alt="Pose For It Tee"title="Pose For It Tee"loading="lazy"width="340" height="511"/>
+                <p class="set__item__title">Pose For It Tee</p>
+                <p class="set__item__price">$45.00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="wrapper">
+          <img
+            class="footer__logo"
+            src="./img/logo-principe-fresco.png"alt="Logo principe fresco"title="Logo principe fresco"loading="lazy"width="247"height="57"/>
+      <script src="./scrip.js"></script>
+    </body>
+    </html>
+
